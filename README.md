@@ -1,5 +1,2 @@
-## Dependencies
-
-pygame can be installed using pip
-
-```pip install pygame```
+A* and BSF solver for Sokoban.
+GUI is based on implementation from https://github.com/morenod/sokoban
