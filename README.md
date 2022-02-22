@@ -3,6 +3,10 @@ GUI is based on implementation from https://github.com/morenod/sokoban
 
 Installation:
 Install packages in requirements.txt file with pip or conda
+1. pip install virtialenv
+2. virtualenv venv
+3. source venv/bin/activate
+4. pip install -r requirements.txt
 
 Instructions for running:
 
