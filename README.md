@@ -8,7 +8,7 @@ Instructions for running:
 
 1.  cd to this directory
 2.  python sokoban A* (to run A*-Search)  
-    python sokoban BFS (to run BFS)
+    python sokoban BFS (to run BFS)  
     python sokoban None (to play with arrows on keyboard without solver)
 3.  Enter the number of a level (1 and 2 are recommendet as the solutio is found quite fast)
 4.  Hit enter
