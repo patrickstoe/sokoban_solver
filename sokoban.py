@@ -304,12 +304,12 @@ if __name__ == "__main__":
     parser.add_argument('solver_method',
                            metavar='method',
                            type=str,
-                           help='BFS/A*/None')
+                           help='BFS/ASTAR/None')
 
     args = parser.parse_args()
     method = args.solver_method
 
-    if method == "BFS" or method == "A*":
+    if method == "BFS" or method == "ASTAR":
         AI = True
     else:
         AI = False
