@@ -79,7 +79,7 @@ class AISolver:
         if algorithm == "BFS":
             print("Search using breadth first search")
             solution = self.breadthFirstSearch(self.initial_state)
-        elif algorithm == "A*":
+        elif algorithm == "ASTAR":
             print("Search using A* search")
             solution = self.a_star_search(self.initial_state)
         else:
