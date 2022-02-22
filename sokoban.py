@@ -1,5 +1,5 @@
 #!../bin/python
-
+import argparse
 import sys
 import pygame
 import queue
@@ -297,12 +297,22 @@ def start_game():
 
 
 if __name__ == "__main__":
-    ##### Enable / Disable AI #####
-    AI = True  #
     level_file = 'levels'
-    methods = ["A*", "BFS"]
-    method = methods[0]
-    ###############################
+
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('solver_method',
+                           metavar='method',
+                           type=str,
+                           help='BFS/A*/None')
+
+    args = parser.parse_args()
+    method = args.solver_method
+
+    if method == "BFS" or method == "A*":
+        AI = True
+    else:
+        AI = False
 
     wall = pygame.image.load('images/wall.png')
     floor = pygame.image.load('images/floor.png')
